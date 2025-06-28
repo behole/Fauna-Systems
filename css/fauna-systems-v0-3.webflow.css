@@ -375,6 +375,10 @@
   display: flex;
 }
 
+.background-video-3 {
+  height: 400px;
+}
+
 @media screen and (max-width: 479px) {
   .right-arrow, .left-arrow {
     display: none;
