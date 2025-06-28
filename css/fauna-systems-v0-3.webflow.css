@@ -200,7 +200,7 @@
 
 .heading-3 {
   color: #000;
-  text-align: center;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 0;
   font-family: ibm-plex-mono, sans-serif;
@@ -212,7 +212,7 @@
 
 .heading-3.right {
   color: #000;
-  text-align: left;
+  text-align: right;
 }
 
 .heading-3.white {
@@ -228,6 +228,16 @@
   text-align: left;
 }
 
+.heading-3.left.black, .heading-3.black {
+  color: #000;
+}
+
+.heading-3.smaller {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .mission-headline {
   margin-top: 0;
   line-height: 1;
@@ -235,7 +245,7 @@
 
 ._002 {
   margin-top: 69px;
-  margin-bottom: 69px;
+  margin-bottom: 0;
 }
 
 .image-3 {
@@ -243,7 +253,21 @@
   transform: rotate(180deg);
 }
 
-.italic-text, .italic-text-2 {
+.italic-text {
+  color: #000;
+  text-transform: uppercase;
+  display: block;
+}
+
+.italic-text.white {
+  color: #fff;
+}
+
+.italic-text.white.center {
+  text-align: center;
+}
+
+.italic-text-2 {
   color: #000;
   text-transform: uppercase;
 }
@@ -264,7 +288,20 @@
 }
 
 .semi-big-paragraph.partners {
+  margin-top: 18px;
   font-size: 18px;
+}
+
+.semi-big-paragraph.left {
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.semi-big-paragraph.left.smaller {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .headerimage {
@@ -284,13 +321,20 @@
 }
 
 .science-headline {
+  background-color: #0000;
   margin-top: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
   line-height: 1;
+}
+
+.science-headline.black {
+  background-color: #000;
 }
 
 .science-paragraph {
   text-align: left;
-  margin-top: 21px;
+  margin-top: 0;
 }
 
 .history-header, .history-paragraph {
@@ -300,15 +344,25 @@
   display: flex;
 }
 
+.building-biobots {
+  margin-top: 40px;
+}
+
+.capabilities {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
 .can-cant {
-  background-color: #000;
+  background-color: #0000;
+  border: 1px solid #000;
   border-radius: 0;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 69px;
-  margin-bottom: 69px;
-  padding: 140px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 40px 140px;
   display: flex;
 }
 
@@ -318,7 +372,7 @@
 
 .team {
   padding-top: 69px;
-  padding-bottom: 69px;
+  padding-bottom: 0;
 }
 
 ._004 {
@@ -331,14 +385,17 @@
 }
 
 .footer {
-  background-color: #000;
+  background-color: #0000;
   height: 50px;
 }
 
 .paragraph-2 {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
   font-family: ibm-plex-mono, sans-serif;
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 .can-cant-grid {
@@ -372,7 +429,7 @@
 }
 
 .list {
-  color: #fff;
+  color: #000;
   padding-left: 20px;
   font-size: 20px;
 }
@@ -391,6 +448,7 @@
 }
 
 .cans {
+  color: #000;
   flex-flow: column;
   width: 100%;
   display: flex;
@@ -492,15 +550,17 @@
 
 .team-wrapper {
   border: 1px solid #000;
-  padding: 40px;
+  padding: 0 0 69px;
 }
 
 .team-members {
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
-  margin-top: 38px;
+  margin-top: 69px;
+  padding-left: 78px;
+  padding-right: 78px;
 }
 
 .member-block {
@@ -533,6 +593,35 @@
   line-height: 23px;
 }
 
+.div-block-7, .div-block-8 {
+  width: 600px;
+}
+
+.container-right {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.paragraph-6 {
+  font-family: ibm-plex-mono, sans-serif;
+}
+
+.grid {
+  grid-column-gap: 23px;
+  grid-row-gap: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.background-video-5 {
+  height: 50px;
+}
+
+.container {
+  padding-top: 66px;
+}
+
 @media screen and (max-width: 479px) {
   .right-arrow, .left-arrow {
     display: none;
@@ -554,14 +643,15 @@
   .logo-wrapper {
     justify-content: center;
     align-items: flex-start;
+    display: none;
   }
 
   .nav-sticky-inner {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    flex-flow: column;
+    flex-flow: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .div-block-3 {
@@ -577,6 +667,62 @@
     font-size: 70px;
     line-height: 0;
     display: inline-block;
+  }
+
+  .heading-3.left.black {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .semi-big-paragraph {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .semi-big-paragraph.right {
+    width: auto;
+    font-size: 17px;
+  }
+
+  .semi-big-paragraph.partners {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .semi-big-paragraph.left {
+    width: auto;
+    font-size: 17px;
+  }
+
+  .can-cant {
+    padding: 69px 15px 15px;
+  }
+
+  .cants {
+    margin-bottom: 69px;
+  }
+
+  .team-wrapper {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .div-block-7 {
+    width: auto;
+    max-width: 600px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .container-right {
+    padding-left: 13px;
+    padding-right: 13px;
   }
 }
 
