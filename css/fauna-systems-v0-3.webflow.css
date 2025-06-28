@@ -58,7 +58,7 @@
 
 .top-nav {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
@@ -209,7 +209,10 @@
 .heading-3.white {
   color: #fff;
   text-align: left;
+  text-transform: uppercase;
   margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .mission-headline {
@@ -223,6 +226,7 @@
 }
 
 .image-3 {
+  display: none;
   transform: rotate(180deg);
 }
 
@@ -281,15 +285,22 @@
 
 .can-cant {
   background-color: #000;
+  border-radius: 0;
   flex-flow: column;
   justify-content: flex-start;
-  align-items: center;
-  padding: 69px 15px;
+  align-items: flex-start;
+  margin-top: 69px;
+  margin-bottom: 69px;
+  padding: 140px;
   display: flex;
 }
 
 .publications {
   padding: 25px 15px;
+}
+
+._004 {
+  background-color: #adadad;
 }
 
 .footer {
@@ -326,15 +337,16 @@
   font-family: ibm-plex-mono, sans-serif;
 }
 
-.cans {
+.cants {
   flex-flow: column;
-  width: 70%;
+  width: 100%;
   margin-top: 42px;
   display: flex;
 }
 
 .list {
   color: #fff;
+  padding-left: 20px;
   font-size: 20px;
 }
 
@@ -351,9 +363,15 @@
   color: red;
 }
 
-.cant {
+.cans {
   flex-flow: column;
-  width: 70%;
+  width: 100%;
+  display: flex;
+}
+
+.names-wrapper {
+  justify-content: space-between;
+  align-items: flex-start;
   display: flex;
 }
 
