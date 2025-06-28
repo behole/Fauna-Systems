@@ -251,8 +251,7 @@
 }
 
 .headerimage {
-  height: 400px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .science-wrapper {
@@ -376,7 +375,7 @@
 }
 
 .background-video-3 {
-  height: 400px;
+  height: 350px;
 }
 
 @media screen and (max-width: 479px) {
