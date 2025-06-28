@@ -215,6 +215,10 @@
   font-weight: 700;
 }
 
+.heading-3.left {
+  text-align: left;
+}
+
 .mission-headline {
   margin-top: 0;
   line-height: 1;
@@ -302,6 +306,11 @@
   background-color: #adadad;
 }
 
+._005 {
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
 .footer {
   background-color: #000;
   height: 50px;
@@ -368,7 +377,13 @@
   display: flex;
 }
 
+.form-wrapper {
+  margin-top: 30px;
+}
+
 .names-wrapper {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   justify-content: space-between;
   align-items: flex-start;
   display: flex;
@@ -385,6 +400,44 @@
 
 .background-video-4 {
   height: 400px;
+}
+
+.skinny {
+  max-width: 650px;
+}
+
+.companies-wrapper {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.textarea {
+  min-height: 170px;
+  margin-bottom: 27px;
+  font-family: ibm-plex-mono, sans-serif;
+}
+
+.submit-button {
+  outline-offset: 0px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 30px;
+  outline: 1px dashed #997474;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: ibm-plex-mono, sans-serif;
+  font-size: 12px;
+  display: block;
+}
+
+.text-field, .text-field-2, .text-field-3, .text-field-4 {
+  font-family: ibm-plex-mono, sans-serif;
 }
 
 @media screen and (max-width: 479px) {
