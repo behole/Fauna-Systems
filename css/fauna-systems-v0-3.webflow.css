@@ -694,6 +694,11 @@
     font-size: 17px;
   }
 
+  .building-biobots {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
   .can-cant {
     padding: 69px 15px 15px;
   }
@@ -713,6 +718,11 @@
     padding-right: 15px;
   }
 
+  .paragraph-5 {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
   .div-block-7 {
     width: auto;
     max-width: 600px;
@@ -723,6 +733,10 @@
   .container-right {
     padding-left: 13px;
     padding-right: 13px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 
