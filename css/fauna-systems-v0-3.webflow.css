@@ -383,6 +383,10 @@
   height: 400px;
 }
 
+.background-video-4 {
+  height: 400px;
+}
+
 @media screen and (max-width: 479px) {
   .right-arrow, .left-arrow {
     display: none;
