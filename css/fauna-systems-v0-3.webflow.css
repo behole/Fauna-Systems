@@ -378,6 +378,11 @@
   height: 350px;
 }
 
+.science-video-wrapper {
+  background-color: #5f3c3c;
+  height: 400px;
+}
+
 @media screen and (max-width: 479px) {
   .right-arrow, .left-arrow {
     display: none;
