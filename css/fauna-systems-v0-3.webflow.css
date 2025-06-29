@@ -36,7 +36,9 @@
 }
 
 .slide-nav {
-  display: none;
+  z-index: 421;
+  font-size: 5px;
+  display: block;
 }
 
 .right-arrow {
@@ -400,11 +402,12 @@
 
 ._004 {
   background-color: #adadad00;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 ._005 {
-  padding-top: 69px;
-  padding-bottom: 69px;
+  padding: 69px 15px;
 }
 
 .footer {
