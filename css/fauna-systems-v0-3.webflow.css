@@ -188,6 +188,10 @@
   line-height: 1;
 }
 
+.heading-2.center {
+  text-align: center;
+}
+
 .mission-wrapper {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -754,6 +758,10 @@
 
   .heading-2 {
     font-size: 17px;
+  }
+
+  .heading-2.center.mob {
+    text-align: center;
   }
 
   .spanman {
