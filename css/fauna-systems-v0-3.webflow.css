@@ -58,6 +58,8 @@
 
 .nav-wrapper {
   z-index: 420;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   flex-flow: column;
   justify-content: space-between;
   align-items: stretch;
@@ -745,8 +747,8 @@
   }
 
   .nav-sticky-inner {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
     flex-flow: wrap;
     justify-content: center;
     align-items: center;
@@ -850,6 +852,10 @@
   .p2.wide.mob {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .link-block {
+    display: none;
   }
 }
 
